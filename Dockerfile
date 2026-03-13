@@ -1,11 +1,11 @@
-# usa a imagem oficial do PHP com Apache
+# Use a imagem oficial do PHP com Apache
 FROM php:8.2-apache
 
-# copia os arquivos da sua aplicação para o diretorio padrao do apache
-COPY . /var/ww/html/
+# Copia os arquivos da sua aplicação para o diretório padrão do Apache
+COPY . /var/www/html/
 
-# habilita modulos adicionais do Apache (opicional)
+# Habilita módulos adicionais do Apache (opcional)
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Exponha a porta padrao do apache
-EXPOSE 80
+# Exponha a porta padrão do Apache 
+EXPOSE 
