@@ -15,5 +15,6 @@ try {
 } catch (PDOException $e) {
     // Em caso de erro, exibe uma mensagem (em produção, melhor logar em vez disso)
     die("Erro na conexão com o banco de dados: " . $e->getMessage());
+
 }
 ?>
